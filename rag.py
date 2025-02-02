@@ -74,7 +74,7 @@ if uploaded_file is not None:
     retriever = vector.as_retriever(search_type="similarity", search_kwargs={"k": 3})
 
     # Define llm
-    llm = Ollama(model="deepseek-r1")
+    llm = Ollama(model="deepseek-r1:1.5b")
 
     # Define the prompt
     prompt = """
